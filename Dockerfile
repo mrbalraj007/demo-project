@@ -7,6 +7,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page291/dr
 WORKDIR /var/www/html
 RUN unzip drool.zip
 RUN cp -rvf drool-html/* .
-RUN rm -rf drool-html kindle.zip
+RUN rm -rf drool-html drool.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
